@@ -94,6 +94,9 @@
                             <ul class="grid-lod effect-2" id="grid">
                             <!--  ★課題3★ /static/images/caravan ディレクトリ内の画像がすべて表示されるようloop文を使って表示してください  -->
                             <!--  <li><img src="[画像URL]" alt="" class="img-responsive"/></li> -->
+                                {% for image_name in images %}
+                                    <li><img src="/static/images/caravan/{{image_name}}" /></li>
+                                {% endfor %}
                             </ul>
 
                         </div>
@@ -116,7 +119,7 @@
         <footer role="footer">
             <!-- logo -->
                 <h1>
-                    <a href="/" title="PyLadies Caravan"><img src="/static/images/logo.png" title="PyLadies Caravan" alt="PyLadies Caravan"/></a>
+                    <a href="/" title="PyLadies Caravan"><img src="/static/images/logo.png" title="PyLadies Caravan" alt="PyLadies Caravan" width="95%"/></a>
                 </h1>
             <!-- logo -->
 
